@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>EloGrid 🏈</title>
+    <script
+			  src="https://code.jquery.com/jquery-3.7.1.min.js"
+			  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			  crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+
+
+
+    <div id="options">
+        <ul>
+            <li><a class="division-option" onclick="getDivision('all'); return false" >All Teams</a></li>
+            <li><a class="division-option" onclick="getDivision('AFC'); return false">AFC</a></li>
+            <li><a class="division-option" onclick="getDivision('AFCEast'); return false">AFC East</a></li>
+            <li><a class="division-option" onclick="getDivision('AFCWest'); return false">AFC West</a></li>
+            <li><a class="division-option" onclick="getDivision('AFCNorth'); return false">AFC North</a></li>
+            <li><a class="division-option" onclick="getDivision('AFCSouth'); return false">AFC South</a></li>
+
+            <li><a class="division-option" onclick="getDivision('NFC'); return false">NFC</a></li>
+            <li><a class="division-option" onclick="getDivision('NFC East'); return false">NFC East</a></li>
+            <li><a class="division-option" onclick="getDivision('NFC West'); return false">NFC West</a></li>
+            <li><a class="division-option" onclick="getDivision('NFC North'); return false">NFC North</a></li>
+            <li><a class="division-option" onclick="getDivision('NFC South'); return false">NFC South</a></li>
+
+
+        </ul>
+    </div>
+
+
+    <div id="rank-table">
+
+
+
+        <h2 id="race-title"></h2>
+        <table id="data-table">
+            <thead>
+                <tr id="table-head"></tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+
+
+    </div>
+    <h3 style="text-align: center; color:white;"><a id="githubLink" href="https://github.com/jmi06">Made by jmi06</a></h3>
+
+
+
+
+
+    <script>
+        $(function(){
+          $("#nav-placeholder").load("components/header.html");
+        });
+    </script>
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>
